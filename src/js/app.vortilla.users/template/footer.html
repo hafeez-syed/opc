@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-lg-6 selected-users" ng-if="usersManagerCtrl.usersList === 'all'">
+        {{usersManagerCtrl.totalUsersSelected}} users selected
+    </div>
+    <div class="col-lg-3 col-lg-offset-3 action-buttons" ng-if="usersManagerCtrl.usersList === 'all'">
+            <button class="btn btn-default btn-selected" ng-disabled="usersManagerCtrl.totalUsersSelected === 0">
+                <a ui-sref="selectedusers">Select</a>
+            </button>
+            <button class="btn btn-default">Cancel</button>
+    </div>
+
+    <div class="col-lg-9 col-lg-offset-3 action-buttons" ng-if="usersManagerCtrl.usersList === 'selected'">
+        <button class="btn btn-default">
+            <a ui-sref="home">Back</a>
+        </button>
+    </div>
+</div>

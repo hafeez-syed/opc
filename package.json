@@ -1,0 +1,25 @@
+{
+  "name": "opcentral",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/httpster -p 3336",
+    "test": "./node_modules/.bin/karma start karma.conf.js"
+  },
+  "keywords": [],
+  "author": "Hafeez Syed",
+  "license": "MIT",
+  "devDependencies": {
+    "httpster": "^1.0.4",
+    "jasmine-core": "^3.3.0",
+    "karma": "^3.1.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.2",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-spec-reporter": "0.0.32"
+  }
+}

@@ -1,0 +1,99 @@
+.container-fluid {
+  margin: 20px;
+}
+.header {
+    color: #6796f0;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.header .close-list {
+    border: 1px solid #6796f0;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1.5em;
+    line-height: 0;
+    padding: 0 6px;
+}
+
+.header .close-list a {
+    font-weight: lighter;
+}
+
+.header .close-list:hover {
+    background: #6796f0;
+    color: #fff;
+}
+
+.row {
+    margin: 0;
+}
+
+.user-list {
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+.user {
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    min-height: 50px;
+    margin: 0;
+    padding: 10px;
+}
+
+.user-cursor {
+    cursor: pointer;
+}
+
+.user-selected {
+    background: #e4f5d1;
+}
+
+.user input[type="text"] {
+   display: block;
+}
+
+.action-buttons {
+    margin-top: 20px;
+}
+
+.action-buttons button {
+    border-radius: 0;
+    float: right;
+    margin-left: 5px;
+}
+
+.action-buttons button.btn-selected {
+    background: #87cb3d;
+}
+
+.action-buttons button.btn-selected a {
+    color: #fff;
+}
+
+[class*="col-"] {
+    padding: 0;
+}
+
+[class="col-lg-3"] {
+    border: 0;
+}
+
+.selected-users {
+    padding: 20px 0;
+}
+
+.search-box {
+    margin: 20px 0 0 0;
+}
+
+.search-box .form-control, .search-box .btn {
+    border-radius: 0;
+}
+
+.search-box .btn {
+    background: #6796f0;
+}

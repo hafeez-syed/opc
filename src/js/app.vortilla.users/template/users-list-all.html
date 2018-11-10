@@ -1,0 +1,16 @@
+<div class="row user-list">
+    <div ng-repeat="user in sortedUsers = ( usersManagerCtrl.users | filter:usersManagerCtrl.userSearch) track by user.id" class="{{usersManagerCtrl.classOuter}}">
+        <div class="row user user-cursor"
+             ng-click="usersManagerCtrl.userClicked(user)"
+             ng-class="{'user-selected': user.selected}">
+
+            <div class="{{usersManagerCtrl.classInnerAvatar}}">
+                <img ng-src="{{user.avatar}}" alt="{{user.full_name}}" title="{{user.full_name}}" class="img-circle img-responsive">
+            </div>
+
+            <div class="{{usersManagerCtrl.classInnerTitle}}">
+                {{user.full_name}}
+            </div>
+        </div>
+    </div>
+</div>
