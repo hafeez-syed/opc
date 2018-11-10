@@ -1,13 +1,13 @@
 <div class="container-fluid">
     <div class="row">
-        <div ng-if="usersManagerCtrl.usersList === 'all'">
+        <div ng-if="::usersManagerCtrl.usersList === 'all'">
             <users-header header-label="SELECT USERS"></users-header>
             <search-box></search-box>
-            <users-list-all ng-if="usersManagerCtrl.usersList === 'all'"></users-list-all>
+            <users-list-all ng-if="::usersManagerCtrl.usersList === 'all'"></users-list-all>
         </div>
-        <div ng-if="usersManagerCtrl.usersList === 'selected'">
+        <div ng-if="::usersManagerCtrl.usersList === 'selected'">
             <users-header header-label="SELECTED USERS"></users-header>
-            <users-list-selected ng-if="usersManagerCtrl.usersList === 'selected'"></users-list-selected>
+            <users-list-selected ng-if="::usersManagerCtrl.usersList === 'selected'"></users-list-selected>
         </div>
         <users-footer></users-footer>
     </div>

@@ -1,13 +1,13 @@
 <div class="row user-list">
-    <div ng-repeat="user in usersManagerCtrl.usersSelected track by user.id" class="{{usersManagerCtrl.classOuter}}">
+    <div ng-repeat="user in ::usersManagerCtrl.usersSelected track by user.id" class="{{ ::usersManagerCtrl.classOuter }}">
         <div class="row user">
 
-            <div class="{{usersManagerCtrl.classInnerAvatar}}">
-                <img ng-src="{{user.avatar}}" alt="{{user.full_name}}" title="{{user.full_name}}" class="img-circle img-responsive">
+            <div class="{{ ::usersManagerCtrl.classInnerAvatar }}">
+                <img ng-src="{{ ::user.avatar }}" alt="{{ ::user.full_name}}" title="{{ ::user.full_name }}" class="img-circle img-responsive">
             </div>
 
-            <div class="{{usersManagerCtrl.classInnerTitle}}">
-                {{user.full_name}}
+            <div class="{{ ::usersManagerCtrl.classInnerTitle}}">
+                {{ ::user.full_name }}
             </div>
         </div>
     </div>
