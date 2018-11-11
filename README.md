@@ -28,6 +28,12 @@ and then
 $ npm start
 ```
 
+application can be viewed on
+
+```bash
+http://localhost:3336
+```
+
 to run the test
 
 ```bash
