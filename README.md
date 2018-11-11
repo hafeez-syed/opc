@@ -40,3 +40,8 @@ to run the test
 $ npm run test
 ```
 
+Its a responsive app.
++ Large screens will have 4 columns
++ Medium screens will have 3 columns
++ Small screens will have 2 columns
++ Extra small screens will have 1 column
